@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Management"
+  short_description: "Sync user skills through Google Drive"
+  default_prompt: "Use $skill-management to create or update a Codex skill in the Google Drive synced skills folder."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "NTO Formatting"
+  short_description: "Format scientific and technical reports"
+  default_prompt: "Use $nto-formatting to prepare or review an NTO report against the local formatting checklist."

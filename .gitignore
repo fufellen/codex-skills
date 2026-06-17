@@ -1,0 +1,23 @@
+# Secrets and local credentials
+**/secrets/
+**/*.secret
+**/*.secrets
+**/*token*
+**/*key*
+**/.env
+**/.env.*
+
+# Python / script caches
+**/__pycache__/
+**/*.py[cod]
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+*.swp
+
+# Generated validation/log artifacts
+*.log

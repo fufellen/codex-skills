@@ -1,0 +1,4 @@
+interface:
+  display_name: "Knowledge Refactoring"
+  short_description: "Refactor notes into linked sources of truth"
+  default_prompt: "Use $knowledge-refactoring to consolidate duplicate Obsidian notes into canonical linked sources."
