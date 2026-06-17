@@ -39,16 +39,28 @@ After materially creating or updating user-owned skills, commit and push the ski
 
 If push fails because credentials, network, or remote permissions are unavailable, keep the local commit if it was created and report the exact blocker.
 
-## Corporate NTO Mirror
+## Corporate NTO Submodule
 
-The `nto-formatting` skill must stay synchronized between the personal and corporate skill repositories:
+The `nto-formatting` skill is corporate-primary and is stored as a Git submodule inside the personal skills repository.
 
 ```text
-https://github.com/fufellen/codex-skills
-https://github.com/ak-tech-electronics/codex-skills
+Corporate source of truth: https://github.com/ak-tech-electronics/codex-skills
+Personal repo with submodule: https://github.com/fufellen/codex-skills
+Submodule path in personal repo: nto-formatting
 ```
 
-When `nto-formatting` is materially updated, push the update to the personal repo first, then duplicate the same `nto-formatting` folder to the corporate repo and push it there too. Keep the corporate repo limited to `nto-formatting` unless the user explicitly asks to add more. Report both commit hashes.
+The corporate repo root is the skill folder itself: it must contain `SKILL.md` at repo root, plus optional `agents/`, `references/`, `scripts/`, and `assets/` folders. Do not nest it as `nto-formatting/SKILL.md` inside the corporate repo.
+
+When `nto-formatting` is materially updated:
+
+1. Work inside the submodule path or a fresh corporate repo clone.
+2. Validate the skill in the corporate repo root.
+3. Commit and push the corporate repo first.
+4. Return to the personal repo, verify that `nto-formatting` points at the new corporate commit.
+5. Commit and push the updated submodule pointer in the personal repo.
+6. Report both commit hashes.
+
+Do not duplicate the corporate NTO skill as ordinary tracked files in the personal repo. On a fresh clone of the personal repo, initialize submodules with `git submodule update --init --recursive`; when updating from the corporate `main` branch, use `git submodule update --remote nto-formatting`.
 
 ## Default Rule
 
