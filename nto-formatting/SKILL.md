@@ -32,7 +32,8 @@ If the user asks for current official requirements, verify against current sourc
 3. Load the canonical local note above for exact checklist details.
 4. Preserve technical meaning. Rewrite rough notes into formal report prose, but do not invent measurements, tests, dates, or results.
 5. When reviewing, report concrete issues first: missing structure, wrong captions, absent text references, inconsistent units, draft language, missing sources.
-6. When editing Markdown notes, keep Obsidian links natural and run the note validator if available.
+6. Remove semantic duplication: keep full explanations in one best place, use short cross-references or summaries elsewhere, and preserve repeats only when they add a new role.
+7. When editing Markdown notes, keep Obsidian links natural and run the note validator if available.
 
 ## Required Report Shape
 
@@ -75,6 +76,7 @@ Prefer formal engineering prose:
 - use SI units and keep units consistent;
 - define abbreviations at first use;
 - prefer impersonal/report style over diary style.
+- avoid semantic duplicates; one claim, calculation, module description, limitation, or result should not be fully retold in multiple sections.
 
 Avoid:
 
