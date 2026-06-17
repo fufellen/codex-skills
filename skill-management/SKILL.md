@@ -62,6 +62,8 @@ Do not pull the NTO submodule on every ordinary skill use. Use this freshness mo
 - If the submodule is dirty, ahead, or diverged, stop and report the state before editing.
 - Use `git submodule update --remote nto-formatting` only when the user explicitly asks to sync to the latest corporate version without making a skill edit.
 
+If a merge conflict occurs while updating or publishing the corporate `nto-formatting` skill, resolve it autonomously when the intended result can be determined from the files, commit history, and the user's current instruction. Validate the corporate skill, commit and push the corporate repo, then commit and push the updated submodule pointer in the personal repo. Stop only when the conflict requires guessing unavailable technical meaning, choosing between incompatible user instructions, exposing confidential data, or using unavailable repository permissions.
+
 When `nto-formatting` is materially updated:
 
 1. Work inside the submodule path or a fresh corporate repo clone.
