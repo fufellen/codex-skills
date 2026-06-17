@@ -69,7 +69,8 @@ Include optional elements only when useful. If there are fewer than three abbrev
 
 Prefer formal engineering prose:
 
-- structure each major section as task -> problem -> solution -> result/verification;
+- structure each major section as task -> problem -> solution methods -> implemented solution -> result/verification;
+- treat task -> problem -> solution/methods as the central content spine of an NTO section;
 - describe purpose, input data, processing, output data, limitations, and verification;
 - use SI units and keep units consistent;
 - define abbreviations at first use;
