@@ -51,6 +51,17 @@ Submodule path in personal repo: nto-formatting
 
 The corporate repo root is the skill folder itself: it must contain `SKILL.md` at repo root, plus optional `agents/`, `references/`, `scripts/`, and `assets/` folders. Do not nest it as `nto-formatting/SKILL.md` inside the corporate repo.
 
+Keep personal-repo details out of the corporate `nto-formatting` skill. The personal repository knows that it consumes the corporate repo as a submodule; the corporate repo should only describe itself as the NTO skill source of truth and may refer generically to downstream mirrors or submodules.
+
+Do not pull the NTO submodule on every ordinary skill use. Use this freshness model instead:
+
+- For normal NTO drafting or review, use the local submodule checkout as-is.
+- Before editing the NTO skill, applying self-learning updates, or publishing changes, run `git -C nto-formatting fetch origin main`.
+- Compare `git -C nto-formatting rev-parse HEAD` with `git -C nto-formatting rev-parse origin/main`.
+- If the submodule is behind and clean, fast-forward it with `git -C nto-formatting merge --ff-only origin/main`.
+- If the submodule is dirty, ahead, or diverged, stop and report the state before editing.
+- Use `git submodule update --remote nto-formatting` only when the user explicitly asks to sync to the latest corporate version without making a skill edit.
+
 When `nto-formatting` is materially updated:
 
 1. Work inside the submodule path or a fresh corporate repo clone.
