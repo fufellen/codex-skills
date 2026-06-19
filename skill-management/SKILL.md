@@ -111,6 +111,7 @@ For LTspice skill reads, edits, validation, commits, and pushes, work in the cor
 - Treat local non-synced skill folders as temporary bootstrap pointers, cache, or system-managed content, not as the durable home for user preferences.
 - Do not commit or push synced secrets; keep `secrets/` folders and local credential files ignored.
 - If a user gives a durable preference about how skills should be created, updated, named, synced, or used, add it to this skill or the relevant domain skill without waiting for another reminder.
+- When creating or materially updating user-owned skills, use `skill-authoring` as the personal default workflow, alongside the system `skill-creator` mechanics.
 - When a new or existing skill needs self-learning, reusable lessons, or durable preference persistence, use the `skill-learning` skill instead of copying the full learning policy into every domain skill.
 - Material self-learning updates to user-owned skills should be validated, committed, and pushed by default unless the user explicitly says not to. Future skill creation should include a compact domain-specific self-improvement section that points to `skill-learning` and this publishing/merge-conflict policy.
 - Future skill creation should include an NTO-style freshness check before material edits, self-learning updates, and publishing.
@@ -147,6 +148,12 @@ C:\Users\User\Мой диск\Obsidian\.codex\skills\nto-formatting\ltspice-simu
 C:\Users\User\Мой диск\Obsidian\.codex\skills\skill-learning
 ```
 
+- `skill-authoring` currently lives at:
+
+```text
+C:\Users\User\Мой диск\Obsidian\.codex\skills\skill-authoring
+```
+
 - `pdf-textbook-to-markdown` currently lives at:
 
 ```text
@@ -163,7 +170,7 @@ C:\Users\User\Мой диск\Obsidian\.codex\skills\scientific-work\references\
 
 When creating a new skill from scratch:
 
-1. Use the system `skill-creator` guidance.
+1. Use the personal `skill-authoring` workflow for user defaults and the system `skill-creator` guidance for generator/validation mechanics.
 2. Use `skill-learning` when the skill should persist reusable lessons, failure modes, commands, durable user preferences, or self-improvement behavior.
 3. Initialize the skill in:
 
@@ -205,5 +212,6 @@ Use this skill for general rules about skill storage and synchronization. Use do
 - scientific and technical report / NTO formatting: `nto-formatting`;
 - LTspice schematic and netlist simulation workflows: `nto-formatting/ltspice-simulation`;
 - shared self-learning and reusable-lesson policy for skills: `skill-learning`;
+- user-owned skill creation/update workflow and default self-improvement/publishing policy: `skill-authoring`;
 - presentation-specific behavior for research talks: `scientific-work/references/presentation-workflow.md`;
 - Obsidian REST/MCP bridge details: `scientific-work/references/obsidian-ai-integration.md`.

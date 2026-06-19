@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Authoring"
+  short_description: "Create Codex skills with personal defaults"
+  default_prompt: "Use $skill-authoring to create or update a Codex skill with my standard self-learning and publishing defaults."
