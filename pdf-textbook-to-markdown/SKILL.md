@@ -9,6 +9,10 @@ description: Convert, extract, segment, clean up, and review PDF textbooks into 
 
 Turn a PDF textbook into useful, source-backed Markdown without silently losing structure. Preserve the original PDF, keep page-level traceability, prefer a faithful draft before cleanup, and mark uncertain OCR, formulas, tables, or figure captions instead of inventing missing content.
 
+## Repository Model
+
+This skill is stored in both the user's personal skills repository and the corporate skills repository. Keep the personal repository copy as the safety copy so work is not lost if corporate publishing, permissions, sync, or merge resolution fails. Keep both copies aligned when the user asks to publish or synchronize this skill across repositories, but do not delete the personal copy merely because the skill is mirrored to corporate.
+
 ## Workflow
 
 1. Identify the source PDF, target folder, output style, language, and split policy: one Markdown file, one file per chapter, or an Obsidian index plus chapter notes.

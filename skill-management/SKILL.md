@@ -115,6 +115,7 @@ For LTspice skill reads, edits, validation, commits, and pushes, work in the cor
 - When a new or existing skill needs self-learning, reusable lessons, or durable preference persistence, use the `skill-learning` skill instead of copying the full learning policy into every domain skill.
 - Material self-learning updates to user-owned skills should be validated, committed, and pushed by default unless the user explicitly says not to. Future skill creation should include a compact domain-specific self-improvement section that points to `skill-learning` and this publishing/merge-conflict policy.
 - Future skill creation should include an NTO-style freshness check before material edits, self-learning updates, and publishing.
+- When a personal skill is mirrored to a corporate repository, keep the personal repository copy as the safety copy unless the user explicitly asks to remove it. Corporate publishing, permissions, sync, or merge failures must not cause loss of the user's personal skill work.
 
 ## Existing Google Drive Skills
 
@@ -142,6 +143,18 @@ C:\Users\User\Мой диск\Obsidian\.codex\skills\nto-formatting
 C:\Users\User\Мой диск\Obsidian\.codex\skills\nto-formatting\ltspice-simulation
 ```
 
+- `pdf-textbook-to-markdown` currently lives in the personal skills repository as the safety copy at:
+
+```text
+C:\Users\User\Мой диск\Obsidian\.codex\skills\pdf-textbook-to-markdown
+```
+
+It is also mirrored in the corporate checkout at:
+
+```text
+C:\Users\User\Мой диск\Obsidian\.codex\skills\nto-formatting\pdf-textbook-to-markdown
+```
+
 - `skill-learning` currently lives at:
 
 ```text
@@ -152,12 +165,6 @@ C:\Users\User\Мой диск\Obsidian\.codex\skills\skill-learning
 
 ```text
 C:\Users\User\Мой диск\Obsidian\.codex\skills\skill-authoring
-```
-
-- `pdf-textbook-to-markdown` currently lives at:
-
-```text
-C:\Users\User\Мой диск\Obsidian\.codex\skills\pdf-textbook-to-markdown
 ```
 
 - Presentation workflow rules for scientific/popular-science decks currently live at:
@@ -211,6 +218,7 @@ Use this skill for general rules about skill storage and synchronization. Use do
 - scientific notes, papers, PhD work, Obsidian research workflows: `scientific-work`;
 - scientific and technical report / NTO formatting: `nto-formatting`;
 - LTspice schematic and netlist simulation workflows: `nto-formatting/ltspice-simulation`;
+- PDF textbook to Markdown workflows: `pdf-textbook-to-markdown` in the personal repo, mirrored to `nto-formatting/pdf-textbook-to-markdown` in the corporate repo when requested;
 - shared self-learning and reusable-lesson policy for skills: `skill-learning`;
 - user-owned skill creation/update workflow and default self-improvement/publishing policy: `skill-authoring`;
 - presentation-specific behavior for research talks: `scientific-work/references/presentation-workflow.md`;

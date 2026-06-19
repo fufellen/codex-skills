@@ -28,6 +28,7 @@ Read `references/default-skill-pattern.md` before creating a new skill or adding
 - Add `agents/openai.yaml` with a clear display name, short description, and default prompt.
 - Include a compact self-improvement and publishing section in every non-static user-owned skill.
 - Validate changed skills when feasible, stage only relevant files, commit, and push by default unless the user explicitly says not to.
+- When mirroring a personal skill to a corporate repository, keep the personal repository copy as the safety copy unless the user explicitly asks to remove it. Corporate publishing problems should not risk losing the user's skill work.
 
 ## Freshness Check
 

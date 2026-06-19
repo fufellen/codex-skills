@@ -30,6 +30,8 @@ After materially updating this skill, validate it when feasible, then commit and
 If publishing encounters remote changes or merge conflicts, resolve them autonomously when the intended final meaning can be determined from the files, commit history, nearby rules, and the user's instruction. Preserve compatible rules from both sides, consolidate duplicates, rerun validation, commit the resolved result, and push. Stop only when resolution would require guessing unavailable technical meaning, exposing protected content, discarding user work, or using unavailable repository permissions.
 ```
 
+For skills mirrored from the personal repository to a corporate repository, add that the personal repository copy is the safety copy and should not be deleted unless the user explicitly asks. If corporate publishing, permissions, sync, or merge resolution fails, preserve and report the personal copy or personal commit.
+
 ## Publishing Checklist
 
 Use this checklist before committing user-owned skill changes:
