@@ -9,6 +9,10 @@ description: Shared self-learning and reusable-lesson policy for Codex skills. U
 
 Use this skill with `skill-creator` and `skill-management` when a Codex skill needs a self-learning or self-improvement rule. Keep domain skills focused on their domain; put only domain-specific learning targets there and rely on this policy for the shared behavior.
 
+## Self-Improvement And Publishing
+
+When this self-learning policy itself needs a durable update, keep the rule compact and repository-agnostic. Before materially editing this skill, applying self-learning updates, or publishing changes, run the owning repository's freshness check; after updating, validate, commit, and push the relevant skill changes by default unless the user explicitly says not to. Resolve merge conflicts autonomously when the intended final meaning can be determined safely.
+
 ## Common Repetitions Found
 
 The Obsidian and corporate skill set repeats these general rules:

@@ -15,6 +15,16 @@ When updating this skill, update this Google Drive copy first. Do not store inde
 
 Use this skill as the operating guide for the user's research and technical notes in `C:\Users\User\Мой диск\Obsidian`, especially `PhD` and work-project notes.
 
+## Self-Improvement And Publishing
+
+When scientific-work tasks reveal a durable, reusable lesson, use the `skill-learning` policy. Save compact rules about scientific note style, source use, term-note capture, modeling hygiene, paper analysis, presentation workflow, reusable scripts, or validation checks in this skill or the relevant reference file. Do not store secrets, credentials, private raw notes, unpublished measurements, customer-confidential content, generated logs, or one-off project facts in the skill.
+
+Before materially editing this skill, applying self-learning updates, or publishing changes, run the owning repository's freshness check: fetch `origin main`, compare local `HEAD` with `origin/main`, fast-forward if local is behind and the relevant working tree is clean, and inspect dirty/ahead/diverged states before continuing.
+
+After materially updating this skill, validate it when feasible, then commit and push the relevant skill changes to the owning repository by default unless the user explicitly says not to. Stage only relevant skill files and repository metadata.
+
+If publishing encounters remote changes or merge conflicts, resolve them autonomously when the intended final meaning can be determined from the files, commit history, nearby rules, and the user's instruction. Preserve compatible rules from both sides, consolidate duplicates, rerun validation, commit the resolved result, and push. Stop only when resolution would require guessing unavailable technical meaning, exposing protected content, discarding user work, or using unavailable repository permissions.
+
 ## Core Workflow
 
 1. Determine the task type: scientific explanation, technical term explanation, Obsidian note writing, paper analysis/translation, literature search, research planning, NTO/report formatting, or modeling/COMSOL work. When the user asks about НТО, scientific/technical report formatting, report normal-control checklists, ГОСТ 7.32-2017 structure, captions, headings, or source-list formatting, use the `nto-formatting` skill.
