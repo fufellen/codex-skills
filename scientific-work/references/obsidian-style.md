@@ -12,6 +12,7 @@ Use this reference before creating or editing Obsidian notes.
 - Prefer `####` subsections inside existing structured notes.
 - Use KaTeX for formulas, not fenced code blocks.
 - For inline formulas in Obsidian notes, use `$...$`, not `\(...\)`: in this vault `\(...\)` can remain visible in rendered text instead of displaying as math. Use `$$...$$` for display equations.
+- After formulas that introduce or combine symbols, explain notation with `Где:` followed immediately by a bullet list, for example `Где:` then `- $\beta$ - ...` and `- $k_0$ - ...`.
 
 ## Links
 
