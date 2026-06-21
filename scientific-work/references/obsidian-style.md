@@ -11,6 +11,7 @@ Use this reference before creating or editing Obsidian notes.
 - After a short label line ending with `:`, place the following paragraph, list, or code block on the next line without an empty line. Example: `Полезные ключи:` followed immediately by `- ...`.
 - Prefer `####` subsections inside existing structured notes.
 - Use KaTeX for formulas, not fenced code blocks.
+- For inline formulas in Obsidian notes, use `$...$`, not `\(...\)`: in this vault `\(...\)` can remain visible in rendered text instead of displaying as math. Use `$$...$$` for display equations.
 
 ## Links
 
