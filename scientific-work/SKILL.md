@@ -38,6 +38,7 @@ If publishing encounters remote changes or merge conflicts, resolve them autonom
 9. When writing or refactoring local Obsidian notes, any reusable scientific or technical term definition must live in a standalone term note. Do not make an inline paragraph, NTO section, project note, or literature note the only source of truth for a term definition; those notes should use `[[Term]]` links and, when needed, only a short context-specific wording.
 10. When creating or filling a term note because the user's question arose from a specific local note or passage, and it is clear where the new term belongs, also update that source note to link the term naturally with an Obsidian link or alias. If the source context is not clear, do not invent backlinks.
 11. When the user explicitly asks to improve skills during a task, apply compact reusable skill updates as soon as the lesson is clear and safe, then continue the task and report which skill or reference changed.
+12. When the user asks for a serious scientific or technical explanation from local materials, especially requests such as "объясни метод", "разбери", or "что тут происходит" for PhD/science folders, create or update an Obsidian note by default in the nearest relevant folder and answer with a link to it, unless the user explicitly asks not to write files or the question is clearly casual.
 
 ## Local Shell Encoding
 
