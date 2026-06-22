@@ -1,0 +1,4 @@
+interface:
+  display_name: "Obsidian Canvas"
+  short_description: "Design and validate Obsidian Canvas files"
+  default_prompt: "Use $obsidian-canvas to create a clear Obsidian Canvas tree from this outline."

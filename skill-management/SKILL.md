@@ -167,6 +167,12 @@ C:\Users\User\Мой диск\Obsidian\.codex\skills\skill-learning
 C:\Users\User\Мой диск\Obsidian\.codex\skills\skill-authoring
 ```
 
+- `obsidian-canvas` currently lives at:
+
+```text
+C:\Users\User\Мой диск\Obsidian\.codex\skills\obsidian-canvas
+```
+
 - Presentation workflow rules for scientific/popular-science decks currently live at:
 
 ```text
@@ -221,5 +227,6 @@ Use this skill for general rules about skill storage and synchronization. Use do
 - PDF textbook to Markdown workflows: `pdf-textbook-to-markdown` in the personal repo, mirrored to `nto-formatting/pdf-textbook-to-markdown` in the corporate repo when requested;
 - shared self-learning and reusable-lesson policy for skills: `skill-learning`;
 - user-owned skill creation/update workflow and default self-improvement/publishing policy: `skill-authoring`;
+- Obsidian `.canvas` creation, validation, and visual tree layout: `obsidian-canvas`;
 - presentation-specific behavior for research talks: `scientific-work/references/presentation-workflow.md`;
 - Obsidian REST/MCP bridge details: `scientific-work/references/obsidian-ai-integration.md`.
