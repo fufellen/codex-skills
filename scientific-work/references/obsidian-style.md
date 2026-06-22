@@ -17,6 +17,7 @@ Use this reference before creating or editing Obsidian notes.
 ## Links
 
 - Use Obsidian links for local concepts: `[[FCS]]`, `[[CRC_32|CRC-32]]`.
+- Use the shortest Obsidian link path that resolves unambiguously, matching Obsidian's "Shortest path when possible" behavior. Prefer `[[Note title]]` or `[[Note title|alias]]`; include folders only when needed to disambiguate duplicate note names, and avoid full vault-relative paths unless no shorter stable link works.
 - When writing formula notation blocks such as `Где:`, check whether explained terms already have notes in the vault and link them in the bullet text; for example use `[[Propagation constant (постоянная распространения, продольное волновое число)|постоянная распространения]]` instead of plain "постоянная распространения".
 - If a term has a common display alias, use `[[Note title|alias]]`.
 - Do not put aliased Obsidian wikilinks `[[Note title|alias]]` inside Markdown table cells: the `|` can be parsed as a column separator and break the table. In tables, use plain text in the cell and add the Obsidian link in surrounding prose, or use an aliasless `[[Note title]]` link if the full title is acceptable.
