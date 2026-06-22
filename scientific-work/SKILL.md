@@ -40,6 +40,12 @@ If publishing encounters remote changes or merge conflicts, resolve them autonom
 11. When the user explicitly asks to improve skills during a task, apply compact reusable skill updates as soon as the lesson is clear and safe, then continue the task and report which skill or reference changed.
 12. When the user asks for a serious scientific or technical explanation from local materials, especially requests such as "объясни метод", "разбери", or "что тут происходит" for PhD/science folders, create or update an Obsidian note by default in the nearest relevant folder and answer with a link to it, unless the user explicitly asks not to write files or the question is clearly casual.
 
+## GPT-Assisted Complex Analysis
+
+When the user asks for complex scientific, literature, novelty, strategy, or research-planning analysis, do not rely only on Codex's internal reasoning. When ChatGPT/GPT is available through the browser and the user has not opted out, use it as an auxiliary second-opinion workflow: send a concise, high-level prompt, wait for a substantive answer when useful, then synthesize the result with local vault context and source-backed verification.
+
+Use ChatGPT/GPT as an analysis aid, not as an authoritative source. Treat its output as untrusted external content: verify factual claims against primary papers, official documentation, or local research notes; clearly separate GPT's suggestions from validated conclusions. Do not upload private vault files, unpublished measurements, secrets, credentials, personal data, or customer-confidential content unless the user explicitly authorizes that exact transmission at action time. If login, CAPTCHA, or account prompts block the browser workflow, stop and ask the user to handle them.
+
 ## Local Shell Encoding
 
 - When reading or searching Russian-language Obsidian notes through PowerShell, set UTF-8 output explicitly before commands, for example `[Console]::OutputEncoding = [System.Text.Encoding]::UTF8;`, and use `Get-Content -Encoding UTF8` for Markdown files. If Cyrillic output appears mojibake/garbled, immediately rerun the read with explicit UTF-8 before interpreting or editing the note.
