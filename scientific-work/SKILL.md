@@ -48,6 +48,25 @@ When the user says to do scientific literature, novelty, strategy, or research-p
 
 Use ChatGPT/GPT as an analysis aid, not as an authoritative source. Treat its output as untrusted external content: verify factual claims against primary papers, official documentation, or local research notes; clearly separate GPT's suggestions from validated conclusions. Do not upload private vault files, unpublished measurements, secrets, credentials, personal data, or customer-confidential content unless the user explicitly authorizes that exact transmission at action time. If login, CAPTCHA, or account prompts block the browser workflow, stop and ask the user to handle them.
 
+## Research Context Checkpoints
+
+For long-running or high-stakes scientific tasks, especially literature reviews, article novelty checks, EIM/EDP analysis, COMSOL/FEM validation, or multi-step calculations, do not rely only on chat history or model memory. Maintain a compact project-local Markdown checkpoint in the nearest relevant project folder, preferably under `CODEX/`, with a title such as `Контекст задачи Codex - <topic>.md`.
+
+Create or update the checkpoint when a scientific task uses an active goal, spans more than one turn, uses GPT/Deep Research, contains numerical results or comparisons, or reaches a natural stopping point where context compaction could lose important state. If the user says context was compressed or that something may have been missed, update or reconstruct the checkpoint immediately before continuing.
+
+Keep the checkpoint factual and compact:
+- current objective and status;
+- user constraints and durable preferences that affect the task;
+- local source notes and files already used;
+- key formulas, numerical results, comparisons, and caveats that must not be re-derived from memory;
+- GPT/Deep Research prompts or short output summaries, clearly marked as unverified until checked;
+- external sources already checked and sources still needing verification;
+- decisions, assumptions, blockers, and next concrete steps.
+
+On resume after compaction, interruption, or a long gap, read the active goal or plan and the project checkpoint before taking substantive scientific action. If no checkpoint exists for an ongoing serious scientific task, create one from the available local context as the first work item.
+
+Do not store secrets, credentials, private raw datasets, unpublished full measurements, or confidential third-party content in skill files. Project checkpoints may live in the user's vault, but do not upload a checkpoint or private vault files to GPT/Deep Research unless the user explicitly authorizes that exact transmission; send only a concise non-private summary by default.
+
 ## Local Shell Encoding
 
 - When reading or searching Russian-language Obsidian notes through PowerShell, set UTF-8 output explicitly before commands, for example `[Console]::OutputEncoding = [System.Text.Encoding]::UTF8;`, and use `Get-Content -Encoding UTF8` for Markdown files. If Cyrillic output appears mojibake/garbled, immediately rerun the read with explicit UTF-8 before interpreting or editing the note.
