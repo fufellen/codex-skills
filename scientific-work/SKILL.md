@@ -54,6 +54,8 @@ For long-running or high-stakes scientific tasks, especially literature reviews,
 
 Create or update the checkpoint when a scientific task uses an active goal, spans more than one turn, uses GPT/Deep Research, contains numerical results or comparisons, or reaches a natural stopping point where context compaction could lose important state. If the user says context was compressed or that something may have been missed, update or reconstruct the checkpoint immediately before continuing.
 
+For serious scientific tasks that will create or substantially edit notes, articles, literature reviews, calculations, or COMSOL/FEM analyses, create or update the project-local plan/checkpoint note before the substantive work starts. Record the objective, constraints, source notes, files to edit/create, key numerical facts, assumptions, and next steps so context compaction cannot erase the task state.
+
 Keep the checkpoint factual and compact:
 - current objective and status;
 - user constraints and durable preferences that affect the task;
@@ -81,6 +83,7 @@ Do not store secrets, credentials, private raw datasets, unpublished full measur
   - `scripts/Test-Note.ps1` verifies a created or edited Markdown note: strict UTF-8 decode, file metadata, first lines, common mojibake markers, balanced Obsidian links, and optional link-target checks.
   - `scripts/Search-Vault.ps1` searches the vault with `rg`, standard service-folder exclusions, and UTF-8 output. Canonical call: `powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Search-Vault.ps1 -Query "<regex>" -Roots "Работа\Лидар"`; use `-AllVault` for the whole vault, `-Context N`, `-Literal`, and `-FilesOnly` as needed. `-CaseSensitive` is a switch, so omit it unless enabling case-sensitive search. Compatibility aliases exist: `-Pattern` for `-Query` and `-Path` for `-Roots`, but prefer the canonical names.
   - `scripts/Find-Term.ps1` checks for matching note titles and content definitions for a scientific or technical term.
+  - `scripts/Find-ExistingPaperPdf.ps1` checks whether a paper PDF already exists in the vault before downloading, using DOI, DOI-safe fragments, DOI suffixes, year, and stable title words; use it before browser or publisher downloads to avoid duplicates.
   - `scripts/Download-OpenAccessPapers.ps1` downloads legitimately available open-access PDFs from DOI lists by querying OpenAlex/Crossref, validating PDF signatures, and writing a JSON manifest. It does not bypass paywalls or use university credentials; use the browser workflow in `references/paper-analysis.md` when the user wants to authenticate through institutional access.
   - `scripts/Install-ObsidianLocalRestApi.ps1` installs or updates the Obsidian Local REST API plugin release files inside the synced vault.
   - `scripts/Get-ObsidianLocalRestApiConfig.ps1` reads the synced Obsidian Local REST API config and reports whether the API key is configured.
@@ -96,6 +99,7 @@ Do not store secrets, credentials, private raw datasets, unpublished full measur
 - Read `references/vault-map.md` when choosing where to search in the vault or when starting an unfamiliar scientific task.
 - Read `references/obsidian-style.md` before creating or editing scientific Obsidian notes.
 - Read `references/paper-analysis.md` when summarizing, translating, reviewing, extracting ideas from, or comparing papers.
+- Read `references/publisher-site-lessons.md` when downloading papers through publisher, DOI, repository, or institutional-access sites, and update it after learning reusable site-specific behavior.
 - Read `references/comsol-workflow.md` for COMSOL, CST, FEM, mode-analysis, `.mph`, Java automation, or numerical-validation tasks.
 - Read `references/obsidian-ai-integration.md` when connecting Codex or another AI assistant to the vault through Obsidian Local REST API, MCP, semantic search, or Obsidian-native indexing tools.
 - Read `references/presentation-workflow.md` when preparing scientific, technical, or popular-science talks, slide plans, speaker scripts, or presentation source notes.
