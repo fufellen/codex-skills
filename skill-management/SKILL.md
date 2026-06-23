@@ -173,6 +173,12 @@ C:\Users\User\Мой диск\Obsidian\.codex\skills\skill-authoring
 C:\Users\User\Мой диск\Obsidian\.codex\skills\obsidian-canvas
 ```
 
+- `markdown-to-docx` currently lives at:
+
+```text
+C:\Users\User\Мой диск\Obsidian\.codex\skills\markdown-to-docx
+```
+
 - Presentation workflow rules for scientific/popular-science decks currently live at:
 
 ```text
