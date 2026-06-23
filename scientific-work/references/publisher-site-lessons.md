@@ -24,6 +24,10 @@ Use this file for compact reusable lessons from publisher, DOI, repository, and 
 - The Optica `Institutional Login` link can route to OpenAthens Wayfinder. In Russian locale the page may show `Найти ваше учреждение` ("Find your institution"). Leave this step to the user in the visible browser; after they complete SSO, return to the article/PDF URL and retry the download in the authenticated session.
 - If OpenAthens Wayfinder reports `No matching institution found` after abbreviation, full English/Russian name, and email-domain searches, stop trying variants and check the institution library's full-text databases, discovery search, proxy/VPN instructions, or librarian contact path. Record the institution-access route separately from the publisher-access status.
 
+## PubMed Central And EuropePMC
+
+- If an article has a PMCID, NCBI/PMC direct PDF URLs may still return a Google reCAPTCHA page to shell clients. Before marking the PDF unavailable, try the EuropePMC renderer route `https://europepmc.org/articles/PMCxxxxxxx?pdf=render`; it can return a valid official OA `%PDF` when NCBI and publisher PDF endpoints block automated requests.
+
 ## ResearchGate
 
 - ResearchGate pages may expose author-provided full text in search snippets or metadata, but browser access can stop at a `Security check required` page and shell download can return HTTP 403. Treat this as an author-provided PDF candidate, not as downloaded full text. Continue only through visible browser verification or ask the user to download manually; do not mark it as read until a valid local `%PDF` file exists.
