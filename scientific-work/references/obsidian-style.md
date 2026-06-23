@@ -33,6 +33,10 @@ Use this reference before creating or editing Obsidian notes.
 - Add key formula, packet field, geometry, applicability, or limitation when relevant.
 - Keep small standalone term notes focused; link out for deeper context.
 
+## Mermaid Diagrams
+
+- In Mermaid node labels for Obsidian, do not start text with Markdown list markers such as `1.`, `-`, or `*`: Obsidian/Mermaid may render the node as `Unsupported markdown: list`. Use wording such as `Шаг 1 - ...` instead of `1. ...`.
+
 ## Safety
 
 - Do not move or rename notes unless explicitly asked.
