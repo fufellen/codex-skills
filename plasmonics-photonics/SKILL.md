@@ -29,6 +29,8 @@ For nontrivial domain work, first preserve context:
 - keep reviewed-works registers for literature and source audits;
 - after compaction, interruption, or a long gap, read the active goal/plan and project checkpoint before substantive reasoning.
 
+For reusable plasmonics/photonics calculation code, mode-analysis scripts, and validated diagnostics, make intermediate git commits when a repository is available and the user has not opted out. A commit is useful when the code is reproducible and scientifically interpretable: it either agrees with an analytic estimate, literature value, previous COMSOL/FEM/CST result, or another check, or it exposes a meaningful discrepancy. Commit messages or nearby notes should state what the result was compared against and whether the status is `validated`, `diagnostic`, `discrepant`, or `unverified`. Do not commit bulky raw solver artifacts such as large `.mph` files unless the user explicitly wants them versioned.
+
 Search local PhD/vault context before giving scientific conclusions. Prefer local notes, model diaries, PDFs, extracted tables, scripts, and COMSOL/CST logs over memory. Mark uncertain statements as hypotheses.
 
 ## Domain Workflow
