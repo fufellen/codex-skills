@@ -1,0 +1,4 @@
+interface:
+  display_name: "PhD Lerer Repo"
+  short_description: "Maintain the phd_lerer calculation repository."
+  default_prompt: "Use the phd_lerer repo workflow: place reproducible C/Python/COMSOL sources in Git, keep README current, and validate calculations before committing."

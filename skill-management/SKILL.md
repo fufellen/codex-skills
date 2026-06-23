@@ -179,6 +179,12 @@ C:\Users\User\Мой диск\Obsidian\.codex\skills\skill-authoring
 C:\Users\User\Мой диск\Obsidian\.codex\skills\obsidian-canvas
 ```
 
+- `phd-lerer-repo` currently lives at:
+
+```text
+C:\Users\User\Мой диск\Obsidian\.codex\skills\phd-lerer-repo
+```
+
 - `markdown-to-docx` currently lives at:
 
 ```text
@@ -241,5 +247,6 @@ Use this skill for general rules about skill storage and synchronization. Use do
 - shared self-learning and reusable-lesson policy for skills: `skill-learning`;
 - user-owned skill creation/update workflow and default self-improvement/publishing policy: `skill-authoring`;
 - Obsidian `.canvas` creation, validation, and visual tree layout: `obsidian-canvas`;
+- reproducible PhD/Lerer calculation-code repository work: `phd-lerer-repo`;
 - presentation-specific behavior for research talks: `scientific-work/references/presentation-workflow.md`;
 - Obsidian REST/MCP bridge details: `scientific-work/references/obsidian-ai-integration.md`.
