@@ -18,3 +18,4 @@ Use this file for compact reusable lessons from publisher, DOI, repository, and 
 
 - Optica pages often resolve to `opg.optica.org/.../abstract.cfm?uri=...`. Check the article page for PDF/View Media and institutional-login controls before marking a DOI unavailable.
 - For Optica EIM/waveguide papers, keep the DOI and `uri` value in the checkpoint; page titles and metadata can be less stable than the DOI.
+- `PDF Article` links usually point to `viewmedia.cfm?uri=...&seq=0`. A first shell request may return a small HTML redirect to `/viewmedia.cfm?r=1&rwjcode=...`; following that redirect from shell can trigger a Radware Captcha page. Treat this as a browser/security-gate state. Continue in the visible in-app browser and let the user complete verification or institutional login; do not mark the PDF as unavailable only from this shell result.
