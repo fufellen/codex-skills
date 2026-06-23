@@ -9,6 +9,8 @@ description: Refactor Obsidian vault notes and other knowledge bases into linked
 
 Make knowledge DRY without making it cryptic. Each durable fact should have one canonical home; other notes should mention the concept briefly and link to the canonical note or section.
 
+Reusable scientific and technical term definitions should be canonical standalone term notes. If a note defines a term inline, extract or consolidate the reusable definition into the term note and replace repeated explanations elsewhere with `[[Term]]` links plus only the local context needed by that note.
+
 ## Self-Improvement And Publishing
 
 When knowledge-refactoring work reveals a durable, reusable lesson, use the `skill-learning` policy. Save compact canonicalization rules, anti-duplication heuristics, validation checks, or reusable search/refactor workflows in this skill or a focused reference file. Do not store private note content, customer material, credentials, generated logs, or one-off project facts in the skill.
@@ -35,9 +37,12 @@ If publishing encounters remote changes or merge conflicts, resolve them autonom
 7. Do not move or rename notes unless the user explicitly asks.
 8. After material edits, run the vault note validator when available.
 
+When reorganizing term notes, do not assume every term note already lives in a folder named `terms`, `Термины`, or `thermins`. Search for scattered standalone term notes in the relevant vault area, including project folders and root folders, but do not move paper notes, reports, course notes, modeling diaries, or other context-rich notes merely because they contain definitions.
+
 ## Canonicalization Heuristics
 
 - Put byte layouts, packet formats, constants, enum mappings, and selectors in one specification note.
+- Put reusable term definitions in standalone term notes; project notes, report sections, and literature notes should link to them rather than becoming the only definition source.
 - Put end-to-end procedures in a route-map note that links to the specification sections.
 - Put troubleshooting in a diagnostic note or section, linking to the relevant specs instead of copying field lists.
 - Put human-facing briefings in short summary notes with links to the authoritative details.
