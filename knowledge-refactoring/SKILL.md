@@ -58,6 +58,8 @@ Use exact wiki links for local notes:
 [[Canonical Note|display text]]
 ```
 
+Prefer the shortest resolvable wiki link. If the note title is unique in the vault, use `[[Note]]` or `[[Note|display text]]` instead of a vault-root path. Add only the minimal folder path needed to disambiguate duplicate filenames.
+
 Do not write meta-comments inside notes such as "removed duplication here". Make the note read naturally.
 
 ## Verification
