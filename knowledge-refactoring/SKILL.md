@@ -48,6 +48,7 @@ When reorganizing term notes, do not assume every term note already lives in a f
 - Put human-facing briefings in short summary notes with links to the authoritative details.
 - If two notes both look canonical, choose the one whose title names the concept most directly, then turn the other into a workflow, index, or summary.
 - For a tutorial or lesson series, keep one overview/route-map note (e.g. a course plan) that links to the detailed lessons instead of re-explaining them, and make each lesson the canonical home for its own topic. Extract tooling/API/language primitives that recur across sibling lessons (e.g. CMake `OBJECT`/`INTERFACE` libraries, `PUBLIC`/`PRIVATE` visibility, toolchain files, presets) into standalone concept notes; in each lesson replace the inline definition with a short context phrase plus a `[[concept]]` link.
+- When that link points to a recurring primitive whose canonical note does not yet exist, create the standalone note in the same pass rather than leaving a dangling placeholder link — especially when sibling primitives already have their own notes. Reserve placeholder `[[links]]` for genuinely out-of-scope future notes, and verify whether the target already exists before assuming it is missing. Point every reference at the exact note title, using `[[Note|alias]]` when the filename carries a qualifier (e.g. `[[find_package (CMake)|find_package]]`).
 
 ## Obsidian Links
 
