@@ -60,7 +60,7 @@ Never delete without checking — these look like junk but are not:
 Google Drive / Obsidian Sync leave duplicate files named `X (conflict YYYY-MM-DD-HH-MM-SS).ext` (timestamps may stack). Never delete them in bulk or by size heuristic — a conflict copy can hold edits made on another device that exist nowhere else.
 
 For each conflict file, derive the base by stripping every ` (conflict ...)` segment, then diff against it and classify:
-- base missing → the conflict copy is the only copy; keep it (optionally rename to drop the suffix);
+- base missing → the conflict copy is the only copy and holds real content; do not delete it. Rename it to the clean base name to drop the `(conflict ...)` suffix, first confirming the clean name is free and that no note links to the suffixed name (otherwise fix or keep the links);
 - identical to base → pure duplicate, delete the conflict copy;
 - conflict is a strict subset / older snapshot (only removals, trivial reflow, or raw pre-cleanup OCR vs cleaned LaTeX) → the base is canonical, delete the conflict copy;
 - conflict has unique or newer lines (real differing content) → do not delete; merge the unique fragment into the base, or escalate to the user. When the base is empty but the conflict has content, the conflict is the valuable copy.
