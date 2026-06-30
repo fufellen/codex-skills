@@ -39,6 +39,7 @@ python ".\scripts\extract_pdf_textbook.py" extract "input.pdf" --output "book.md
 ## Obsidian Conventions
 
 - Store media in a nearby folder such as `<book-stem>_media/`.
+- Keep Obsidian attachment filenames short and stable, especially on Windows. Prefer names such as `<book-key>-fig-02-02.png` over caption-derived names; long full paths can fail in Obsidian/Electron even when the same files open in external viewers.
 - For Obsidian image embeds, use wikilinks with only the attachment filename, for example `![[Figure 2.2 - Geometry.png]]`; do not include `attachments/` or another media-folder prefix inside the wikilink. If filenames would collide in the vault, rename the extracted media files to unique descriptive names instead of path-qualifying the embed.
 - Use an index note for the book when splitting chapters. Link chapter files with `[[...]]` and include source page ranges.
 - Prefer descriptive chapter filenames with stable ordering, for example `01 - Fundamentals.md`.
